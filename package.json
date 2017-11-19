@@ -7,7 +7,11 @@
   "author": "Bruno Freitas <brunofreitas7@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest && codecov"
+  },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
   },
   "dependencies": {
     "axios": "^0.17.1"
