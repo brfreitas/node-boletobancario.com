@@ -9,17 +9,10 @@ class Boleto {
     billingAddressStreet = null, billingAddressNumber = null,
     billingAddressComplement = null, billingAddressCity = null,
     billingAddressState = null, billingAddressPostcode = null,
-    notifyPayer = null, notificationUrl = null,
-    feeSchemaToken = null, splitRecipient = null) {
-    this.token = token;
-    this.description = description;
-    this.amount = amount;
-    this.payerName = payerName;
-    this.payerCpfCnpj = payerCpfCnpj;
-    this.mode = mode;
-    this.reference = reference;
-    this.dueDate = dueDate;
-    this.installments = installments;
+    notifyPayer = null, notificationUrl = null, feeSchemaToken = null, splitRecipient = null) {
+    this.token = token; this.description = description; this.amount = amount;
+    this.payerName = payerName; this.payerCpfCnpj = payerCpfCnpj; this.mode = mode;
+    this.reference = reference; this.dueDate = dueDate; this.installments = installments;
     this.maxOverdueDays = maxOverdueDays;
     this.fine = fine;
     this.interest = interest;
