@@ -5,4 +5,4 @@ test('Geração de boleto', () => {
   "Pedido1791", 12.7, 'Nome Sobrenome', '94648945123');
   expect.assertions(1);
   return boleto.gerarCobranca().then(data => expect(data.success).toEqual(true));
-})
+});

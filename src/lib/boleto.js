@@ -1,4 +1,4 @@
-const http = require('../support/http.js')
+const util = require('../support/util.js')
 
 class Boleto {
   constructor (token, description,
@@ -34,24 +34,9 @@ class Boleto {
     this.splitRecipient = splitRecipient;
   }
 
-  urlCobanca() {
-    return '/boletofacil/integration/api/v1/issue-charge';
-  }
-
   gerarCobranca() {
-    return new Promise((resolve, reject) => {
-      let url = this.urlCobanca()
-      Object.keys(this).forEach((key, index) => {
-        if(query[key] != null && key !== 'mode'){
-          url += `${index > 0 ? '&' : '?'}${key}=${query[key]}`
-        }
-      });
-      http(this.getMode()).get(url).then(response => {
-        resolve(response.data);
-      }).catch(error => {
-        reject(error);
-      })
-    })
+    return util.doRequest('/boletofacil/integration/api/v1/issue-charge',
+    this, this.mode);
   }
 }
 
