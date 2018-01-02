@@ -1,4 +1,4 @@
-const http = require('../support/http.js')
+const util = require('../support/util.js')
 
 class ConsultaPagamento {
 

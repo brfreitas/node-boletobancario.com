@@ -1,6 +1,6 @@
 {
   "name": "cliente-boletobancario.com",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Cliente NodeJs para requisições a API do voletobancario.com",
   "main": "./src/index.js",
   "repository": "https://github.com/brfreitas/node-boletobancario.com",
